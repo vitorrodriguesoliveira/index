@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <!--como usar jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+ </head>
+
+ <body>
+    <div>
+        <h1>Lista de nomes</h1>
+    </div>
+    <div>
+        <ul style="font-size: 35px;">
+            <li>Maria</li>
+            <li>Carlos</li>
+            <li>Marcos</li>
+            <li>Aline</li>
+        </ul>
+    </div>
+    <div>
+        <button id="btn">clique aqui</button>
+    </div>
+    <script>
+      $('#btn').on("click",botao)// botão some com as listas de nomes
+ function botao() {
+        $('li').css({'color':'#1f8223'})
+      }
+    </script>
+ </body>
+
+</html>
